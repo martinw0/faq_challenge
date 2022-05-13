@@ -30,18 +30,41 @@ main {
 }
 
 .card {
-  width: 300px;
+  width: 275px;
   padding: 25px;
+  margin-top: 120px;
   background-color: white;
   border-radius: 20px;
 }
-.card img {
-  margin-top: -163px;
+.card .illustration {
+  margin-top: -153px;
   padding: 20px;
-  filter: drop-shadow(0px 40px 0px hsla(200deg, 0%, 91%, 0.86));
+  filter: drop-shadow(0px 30px 0px hsla(200deg, 0%, 91%, 0.86));
 }
 .card h1 {
   text-align: center;
+  color: hsl(238deg, 29%, 16%);
+}
+.card p, .card h2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: hsl(240deg, 6%, 50%);
+}
+.card p {
+  display: none;
+}
+.card hr {
+  border-color: hsl(240deg, 5%, 91%);
+  opacity: 0.3;
+}
+.card .question div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .question div img {
+  width: 10px;
+  height: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
