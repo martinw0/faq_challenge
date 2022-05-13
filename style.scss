@@ -15,8 +15,8 @@ $dark-grayish-blue: hsl(240, 6%, 50%);
 $light-grayish-blue: hsl(240, 5%, 91%);
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center;margin-bottom: 5px;color: $light-grayish-blue }
+.attribution a { color: $soft-red; }
 
 html,body {
     margin: 0;
