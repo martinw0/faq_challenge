@@ -33,7 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: contain no-repeat linear-gradient($soft-violet, $soft-blue);
+    background: fixed no-repeat linear-gradient($soft-violet, $soft-blue);
     font-family: 'Kumbh Sans';
 }
 main {
