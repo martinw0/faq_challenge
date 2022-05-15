@@ -60,14 +60,17 @@ main {
 }
 .card h2 {
   margin: 15px 0;
+  color: hsl(237deg, 12%, 33%);
+  font-size: 12px;
+  font-weight: 400;
 }
-.card p, .card h2 {
+.card p {
   font-size: 12px;
   font-weight: 400;
   color: hsl(240deg, 6%, 50%);
-}
-.card p {
   display: none;
+  margin-top: -5px;
+  margin-bottom: 15px;
 }
 .card hr {
   border-color: hsl(240deg, 5%, 91%);
@@ -75,6 +78,9 @@ main {
 }
 .card .question {
   width: 100%;
+}
+.card .question:hover {
+  cursor: pointer;
 }
 .card .question div {
   display: flex;
@@ -84,6 +90,19 @@ main {
 .card .question div img {
   width: 10px;
   height: 7px;
+}
+.card .active div img {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.card .active h2 {
+  font-weight: 700;
+}
+.card .active p {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

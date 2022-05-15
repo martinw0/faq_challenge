@@ -64,14 +64,17 @@ main {
     }
     h2 {
         margin: 15px 0;
+        color: $very-dark-grayish-blue;
+        font-size: 12px;
+        font-weight: 400;
     }
-    p, h2 {
+    p {
         font-size: 12px;
         font-weight: 400;
         color: $dark-grayish-blue;
-    }
-    p {
         display: none;
+        margin-top: -5px;
+        margin-bottom: 15px;
     }
     hr {
         border-color: $light-grayish-blue;
@@ -79,6 +82,9 @@ main {
     }
     .question {
         width: 100%;
+        &:hover {
+            cursor: pointer;
+        }
     }
     .question div {
         display: flex;
@@ -87,6 +93,21 @@ main {
         img {
             width: 10px;
             height: 7px;
+        }
+    }
+    .active {
+        div img {
+            -webkit-transform:rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        h2 {
+            font-weight: 700;
+        }
+        p {
+            display: block;
         }
     }
 }

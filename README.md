@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion card solution
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,7 +15,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
@@ -28,8 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
-
+![Screenshot](./screenshot.png)
 
 ### Links
 
@@ -50,18 +48,23 @@ Users should be able to:
 
 ### What I learned
 
+How to rotate an img in css
 
+```css
+.rotateimg180 {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+```
 
 ### Continued development
 
-
-
 ### Useful resources
-
-
 
 ## Author
 
 - Frontend Mentor - [@martinw0](https://www.frontendmentor.io/profile/martinw0)
 - Twitter - [@leWalletM](https://www.twitter.com/leWalletM)
-
