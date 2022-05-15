@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  background: contain no-repeat linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
   font-family: "Kumbh Sans";
 }
 
@@ -43,7 +43,8 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 25px;
-  margin-top: 130px;
+  margin-top: 150px;
+  margin-bottom: 20px;
   background-color: white;
   border-radius: 20px;
 }
