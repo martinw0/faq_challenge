@@ -64,6 +64,8 @@ How to rotate an img in css
 
 ### Useful resources
 
+[How to detect click outside div](https://techstacker.com/how-to-detect-clicks-outside-element-javascript/)
+
 ## Author
 
 - Frontend Mentor - [@martinw0](https://www.frontendmentor.io/profile/martinw0)
