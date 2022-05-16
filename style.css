@@ -51,7 +51,7 @@ main {
 @media screen and (min-width: 900px) {
   .card {
     width: 600px;
-    height: 330px;
+    height: 370px;
     margin: 0;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -60,6 +60,7 @@ main {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom -140px left -350px;
+    justify-content: center;
   }
 }
 .card .illustration-mobile {
@@ -79,7 +80,7 @@ main {
   .card .illustration-desktop {
     display: block;
     width: 350px;
-    margin: 71px 0;
+    margin-top: 90px;
     margin-left: -80px;
   }
 }

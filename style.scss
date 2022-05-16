@@ -67,7 +67,7 @@ main {
     border-radius: 20px;
     @include media-min('tablet-down') {
         width: 600px;
-        height: 330px;
+        height: 370px;
         margin: 0;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -76,6 +76,7 @@ main {
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: bottom -140px left -350px;
+        justify-content: center;
     }
     .illustration-mobile {
         margin-top: -130px;
@@ -90,7 +91,7 @@ main {
         @include media-min('tablet-down') {
             display: block;
             width: 350px;
-            margin: 71px 0;
+            margin-top: 90px;
             margin-left: -80px;
         }
     }
