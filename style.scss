@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+$breakpoints: (
+    "phone-down": 500px,
+    "tablet-up": 768px,
+    "tablet-down": 900px,
+    "desktop-up": 1024px,
+    "desktop-down": 1280px,
+    "widescreen-up": 1440px
+);
+@mixin media-min($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+        &{ @content; }
+    }
+}
 //Primary
 //Text
 $very-dark-desaturated-blue: hsl(238, 29%, 16%);
@@ -52,16 +65,43 @@ main {
     margin-bottom: 20px;
     background-color: white;
     border-radius: 20px;
-    .illustration {
+    @include media-min('tablet-down') {
+        width: 600px;
+        height: 330px;
+        margin: 0;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        overflow: hidden;
+        background-image: url('./images/bg-pattern-desktop.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom -140px left -350px;
+    }
+    .illustration-mobile {
         margin-top: -130px;
         filter: drop-shadow(0px 30px 0px rgba(192, 175, 255, 0.171));
         width: 230px;
+        @include media-min("tablet-down") {
+            display: none;
+        }
+    }
+    .illustration-desktop {
+        display: none;
+        @include media-min('tablet-down') {
+            display: block;
+            width: 350px;
+            margin: 71px 0;
+            margin-left: -80px;
+        }
     }
     h1 {
         text-align: center;
         color: $very-dark-desaturated-blue;
         margin-top: 40px;
         margin-bottom: 20px;
+        @include media-min('tablet-down') {
+            margin-top: 20px;
+        }
     }
     h2 {
         margin: 15px 0;
@@ -85,6 +125,9 @@ main {
         width: 100%;
         &:hover {
             cursor: pointer;
+        }
+        @include media-min('tablet-down') {
+            width: 45%;
         }
     }
     .question div {

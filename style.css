@@ -48,16 +48,51 @@ main {
   background-color: white;
   border-radius: 20px;
 }
-.card .illustration {
+@media screen and (min-width: 900px) {
+  .card {
+    width: 600px;
+    height: 330px;
+    margin: 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow: hidden;
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom -140px left -350px;
+  }
+}
+.card .illustration-mobile {
   margin-top: -130px;
   filter: drop-shadow(0px 30px 0px rgba(192, 175, 255, 0.171));
   width: 230px;
+}
+@media screen and (min-width: 900px) {
+  .card .illustration-mobile {
+    display: none;
+  }
+}
+.card .illustration-desktop {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .card .illustration-desktop {
+    display: block;
+    width: 350px;
+    margin: 71px 0;
+    margin-left: -80px;
+  }
 }
 .card h1 {
   text-align: center;
   color: hsl(238deg, 29%, 16%);
   margin-top: 40px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 900px) {
+  .card h1 {
+    margin-top: 20px;
+  }
 }
 .card h2 {
   margin: 15px 0;
@@ -82,6 +117,11 @@ main {
 }
 .card .question:hover {
   cursor: pointer;
+}
+@media screen and (min-width: 900px) {
+  .card .question {
+    width: 45%;
+  }
 }
 .card .question div {
   display: flex;
