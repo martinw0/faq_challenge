@@ -60,6 +60,49 @@ How to rotate an img in css
 }
 ```
 
+How to use sass mixins:
+
+```scss
+$breakpoints: (
+    "phone-down": 500px,
+    "tablet-up": 768px,
+    "tablet-down": 900px,
+    "desktop-up": 1024px,
+    "desktop-down": 1280px,
+    "widescreen-up": 1440px
+);
+@mixin media-min($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+        &{ @content; }
+    }
+}
+```
+
+How to skip clickk on a target in js
+
+```js
+if (event.target.closest(".question")) return;
+```
+
+How to use transform to rotate an element
+
+```css
+div img {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+```
+
+How to define width and height with centered card
+
+```css
+left: calc(50vw - 400px);
+top: calc(50vh - 30px);
+```
+
 ### Continued development
 
 ### Useful resources
