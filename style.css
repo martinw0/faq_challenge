@@ -59,7 +59,7 @@ main {
     background-image: url("./images/bg-pattern-desktop.svg");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: bottom -140px left -350px;
+    background-position: bottom -130px left -350px;
     justify-content: center;
   }
 }
@@ -80,8 +80,20 @@ main {
   .card .illustration-desktop {
     display: block;
     width: 350px;
-    margin-top: 90px;
+    margin-top: 40px;
     margin-left: -80px;
+  }
+}
+.card .box {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .card .box {
+    display: block;
+    position: absolute;
+    width: 150px;
+    left: calc(50vw - 400px);
+    top: calc(50vh - 30px);
   }
 }
 .card h1 {
@@ -118,6 +130,9 @@ main {
 }
 .card .question:hover {
   cursor: pointer;
+}
+.card .question:hover h2 {
+  color: hsl(14deg, 88%, 65%);
 }
 @media screen and (min-width: 900px) {
   .card .question {
